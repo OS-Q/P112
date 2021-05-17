@@ -1,0 +1,65 @@
+{
+  "name": "P112",
+  "title": "Atmel AVR Tiny",
+  "description": "Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming",
+  "homepage": "http://www.atmel.com/products/microcontrollers/avr/default.aspx",
+  "license": "Apache-2.0",
+  "keywords": [
+      "dev-platform",
+      "Microchip",
+      "AVR",
+      "Atmel",
+      "8-bit"
+  ],
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-atmelavr.git"
+  },
+  "version": "3.3.0",
+  "frameworks": {
+    "arduino": {
+      "package": "framework-arduino-avr",
+      "script": "builder/frameworks/arduino.py"
+    }
+  },
+  "packages": {
+    "toolchain-atmelavr": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.70300.0"
+    },
+    "framework-arduino-avr": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~5.1.0"
+    },
+    "framework-arduino-avr-attiny": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.5.2"
+    },
+    "tool-avrdude": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.60300.0"
+    },
+    "tool-micronucleus": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.250.0"
+    },
+    "tool-simavr": {
+      "type": "debugger",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.10600.200511"
+    }
+  }
+}
